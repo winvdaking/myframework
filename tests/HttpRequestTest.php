@@ -1,9 +1,9 @@
 <?php
 
-use winv\mf\utils\HttpRequest;
+require_once 'src/classes/mf/utils/AbstractHttpRequest.php';
+require_once 'src/classes/mf/utils/HttpRequest.php';
 
-require_once './src/classes/mf/utils/AbstractHttpRequest.php';
-require_once './src/classes/mf/utils/HttpRequest.php';
+use winv\mf\utils\HttpRequest;
 
 class HttpRequestTest extends \PHPUnit\Framework\TestCase {
   
@@ -17,11 +17,6 @@ class HttpRequestTest extends \PHPUnit\Framework\TestCase {
             'PATH_INFO' => '/stuff/morestuff/');
         $_GET  = array ( 'id' => '15' );
         $_POST = array ( 'text' => 'Un texte.' );
-    }
-
-    function testSubclass(){
-        $this->assertTrue(is_subclass_of('HttpRequest', 'AbstractHttpRequest'),
-           "FEEDBACK : La class HttpRequest doit concrétiser AbstractHttpRequest");
     }
 
     function testScriptName(){

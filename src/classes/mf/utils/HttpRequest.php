@@ -2,7 +2,7 @@
 
 namespace winv\mf\utils;
 
-class HttpRequest extends AbstractHttpRequest{
+class HttpRequest extends AbstractHttpRequest {
     
     public function __construct()
     {
