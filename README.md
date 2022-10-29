@@ -1,4 +1,4 @@
-### MyFramework using Eloquent
+# MyFramework using Eloquent
 
 ## Spécifications techniques
 
@@ -10,10 +10,9 @@ ex : Composer 2.2.6
 
 _Les commandes ci-dessous doivent toutes être exécutées depuis le répertoire où se situe le fichier composer.json_
 
-### Installation des dépendances NPM (avant la première utilisation)
+### Installation des dépendances
 
 `composer install`
-
 
 ### Configuration de la base de données
 
