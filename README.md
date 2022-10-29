@@ -22,5 +22,5 @@ Modifier le fichier `config.ini.example` et en supprimant l'extension _.example_
 
 **Winv**
 
-Github : @winvdaking
+Github : @winvdaking<br>
 Discord : 𝒲𝑖𝑛𝑣#3639
