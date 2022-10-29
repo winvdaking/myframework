@@ -2,9 +2,9 @@
 
 ## Spécifications techniques
 
-`compuser -V`
+`composer -V`
 
-ex : Composer 2.2.6
+ex : `Composer 2.2.6`
 
 ### Exécution des commandes
 
