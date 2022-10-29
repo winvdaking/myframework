@@ -20,7 +20,7 @@ Modifier le fichier `config.ini.example` et en supprimant l'extension _.example_
 
 ### Test Unitaire PHP
 
-Pour réaliser les tests unitaires, il faut avoir installé **phpunit**.
+Pour réaliser les tests unitaires, il faut avoir installé **phpunit**. <br>
 Vérifier votre version `phpunit --version` : `PHPUnit 9.5.10 by Sebastian Bergmann and contributors.`
 
 ## Réaliser les tests
