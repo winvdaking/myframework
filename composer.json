@@ -1,0 +1,15 @@
+{ "name": "winv/my-framework",
+  "description": "Petit framework fait par Winv",
+  "type": "framework",
+  
+  "autoload": {
+      "psr-4": {
+          "winv\\" : "./src/classes",
+          "winv\\config\\" : "./conf"
+      }
+  },
+  
+  "require": {
+      "illuminate/database": "*"
+  }
+}

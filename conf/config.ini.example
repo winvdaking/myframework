@@ -1,0 +1,8 @@
+host        =   your_host
+username    =   your_username
+password    =   your_password
+database    =   db_name
+driver      =   your_driver
+charset     =   utf8
+prefix      =
+collation   =   utf8_general_ci
