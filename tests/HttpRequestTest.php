@@ -1,7 +1,7 @@
 <?php
 
-require_once "AbstractHttpRequest.php";
-require_once "HttpRequest.php";
+require_once './src/classes/mf/utils/AbstractHttpRequest.php';
+require_once './src/classes/mf/utils/HttpRequest.php';
 
 class HttpRequestTest extends \PHPUnit\Framework\TestCase {
   
