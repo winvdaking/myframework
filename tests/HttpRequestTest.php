@@ -1,5 +1,7 @@
 <?php
 
+use winv\mf\utils\HttpRequest;
+
 require_once './src/classes/mf/utils/AbstractHttpRequest.php';
 require_once './src/classes/mf/utils/HttpRequest.php';
 
@@ -19,7 +21,7 @@ class HttpRequestTest extends \PHPUnit\Framework\TestCase {
 
     function testSubclass(){
         $this->assertTrue(is_subclass_of('HttpRequest', 'AbstractHttpRequest'),
-           "FEEDBACK : La class HttpRequest doit concrÃ©tiser AbstractHttpRequest");
+           "FEEDBACK : La class HttpRequest doit concrétiser AbstractHttpRequest");
     }
 
     function testScriptName(){
