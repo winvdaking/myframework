@@ -11,6 +11,7 @@ abstract class AbstractView
     protected ?Router $router = null;
 
     static protected array $style_sheets = [];
+    static protected array $scriptes_js = [];
     static protected string $app_title = "";
 
     /* Ces Données sont passée par les contrôleurs lors de la
@@ -33,6 +34,11 @@ abstract class AbstractView
     static public function addStyleSheet(string $css_files): void
     {
         self::$style_sheets[] = $css_files;
+    }
+
+    static public function addScriptJs(string $js_files): void
+    {
+        self::$scriptes_js[] = $js_files;
     }
 
     static public function setAppTitle(string $title): void
@@ -72,6 +78,10 @@ abstract class AbstractView
         foreach (self::$style_sheets as $file)
             $styles .= '<link rel="stylesheet" href="' . $app_root . '/' . $file . '"> ';
 
+        $scripts = '';
+        foreach (self::$scriptes_js as $file)
+            $scripts .= '<script src="' . $app_root . '/' . $file . '"> ';
+
         $body = $this->makeBody();
 
         /*
@@ -91,6 +101,7 @@ abstract class AbstractView
         
        ${body}
 
+       ${scripts}
     </body>
 </html>
 EOT;
