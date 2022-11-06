@@ -12,7 +12,7 @@ _Les commandes ci-dessous doivent toutes être exécutées depuis le répertoire
 
 ### Installation des dépendances
 
-`composer install`
+`composer install` ou `composer update`
 
 ### Configuration de la base de données
 
